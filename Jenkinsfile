@@ -15,7 +15,7 @@ pipeline {
 
     stage('deploy') {
       steps {
-        echo "ng deploy --base-href=/gestion-des-absences-front/"
+        echo "ng deploy --base-href=https://robin-lad.github.io/gestion-des-absences-front/"
       }
     }
   }

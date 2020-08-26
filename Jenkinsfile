@@ -9,13 +9,13 @@ pipeline {
     stage('build') {
       steps {
         sh "npm install"
-        sh "npm run build --base-href=/gestion-des-absences-front/"
+        sh "npm run build"
       }
     }
 
     stage('deploy') {
       steps {
-        echo "ng deploy --repo=https://github.com/Robin-lad/gestion-des-absences-front.git --base-href=/gestion-des-absences-front/"
+        echo "ng deploy --base-href=/gestion-des-absences-front/"
       }
     }
   }

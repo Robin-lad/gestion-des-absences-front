@@ -9,7 +9,7 @@ pipeline {
     stage('build') {
       steps {
         sh "npm install"
-        sh "npm run build"
+        sh "npm run build --base-href=/gestion-des-absences-front/"
       }
     }
 

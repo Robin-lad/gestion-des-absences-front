@@ -1,6 +1,10 @@
 pipeline {
   agent any
 
+  tools {
+    node: "NodeJS"
+  }
+
   stages {
     stage('build') {
       steps {
@@ -11,7 +15,7 @@ pipeline {
 
     stage('deploy') {
       steps {
-        echo "test"
+        echo "ng deploy --base-href=/gestion-des-absences-front/"
       }
     }
   }
